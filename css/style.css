@@ -1,0 +1,190 @@
+@import url("https://fonts.googleapis.com/css2?family=Raleway&display=swap");
+
+/* General styles */
+body {
+  font-family: "Raleway", sans-serif;
+  margin: 0;
+  padding: 0;
+  background-color: #f5f5f5;
+}
+
+.wrapper {
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: space-between;
+  width: 80%;
+  margin: 2rem auto;
+}
+
+.wrapper.full-width .container {
+  width: 100%;
+}
+
+.container {
+  width: 45%;
+  padding: 1rem;
+  border-radius: 5px;
+  box-shadow: 0 2px 4px rgba(0, 0, 0, 0.1);
+}
+
+/* Header styles */
+header {
+  background-color: #102c57;
+  color: #fff;
+  text-align: center;
+  padding: 1rem;
+}
+
+h1 {
+  font-size: 2rem;
+  margin: 0;
+}
+
+/* Book list container styles */
+.container-header {
+  background-color: #102c57;
+  color: #fff;
+  padding: 1rem;
+  border-top-left-radius: 5px;
+  border-top-right-radius: 5px;
+}
+
+/* Book item styles */
+.item {
+  display: flex;
+  justify-content: space-between;
+  padding: 1rem;
+  margin-bottom: 1rem;
+  border-radius: 5px;
+  background-color: #fff;
+}
+
+.inner {
+  flex: 1;
+}
+
+h2 {
+  font-size: 1.2rem;
+  margin: 0;
+}
+
+p {
+  margin: 0.5rem 0;
+  font-size: 0.9rem;
+}
+
+/* Form styles */
+#add-book {
+  background-color: #dac0a3;
+}
+
+.form-group {
+  margin-bottom: 1rem;
+}
+
+label {
+  display: block;
+  font-weight: bold;
+  margin-bottom: 0.5rem;
+}
+
+input[type="text"],
+input[type="number"] {
+  width: 100%;
+  padding: 0.5rem;
+  border: 1px solid #ccc;
+  border-radius: 3px;
+}
+
+.btn-submit {
+  background-color: #102c57;
+  color: #fff;
+  padding: 0.7rem 1rem;
+  border: none;
+  border-radius: 3px;
+  cursor: pointer;
+}
+
+/* Buttons styles */
+.check-button,
+.undo-button,
+.trash-button {
+  background-color: transparent;
+  border: 1px solid #ccc;
+  padding: 0.5rem 1rem;
+  border-radius: 3px;
+  cursor: pointer;
+}
+
+.check-button {
+  color: #2ecc71; /* Green */
+}
+
+.undo-button {
+  color: #f1c40f; /* Orange */
+}
+
+.trash-button {
+  color: #e74c3c; /* Red */
+}
+
+.check-button,
+.undo-button,
+.trash-button {
+  width: 60px;
+  height: 40px;
+  margin-left: 8px;
+  cursor: pointer;
+  border: none;
+  border-radius: 8px;
+  background: #5f30e2;
+  color: white;
+  font-size: 14px;
+  transition: background 0.3s, color 0.3s;
+}
+
+.check-button:hover,
+.undo-button:hover,
+.trash-button:hover,
+.check-button:focus,
+.undo-button:focus,
+.trash-button:focus {
+  background: #7e57c2;
+  outline: none;
+}
+
+.undo-button {
+  background: #ffa000;
+}
+
+.undo-button:hover,
+.undo-button:focus {
+  background: #ffca28;
+}
+
+.trash-button {
+  background: #e53935;
+}
+
+.trash-button:hover,
+.trash-button:focus {
+  background: #ef5350;
+}
+
+@media only screen and (max-width: 1024px) {
+  .wrapper {
+    margin: 0;
+  }
+
+  .wrapper .container {
+    width: 100%;
+  }
+
+  .list-item {
+    width: 90%;
+  }
+
+  .form {
+    width: 100%;
+  }
+}
